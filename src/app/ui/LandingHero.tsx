@@ -3,19 +3,22 @@ import Image from 'next/image'
 
 const LandingHero = () => {
   return (
-    <div className='flex justify-between h-[450px]'>
+    <div className='flex justify-between'>
       <div className='flex flex-col gap-4 w-1/2'>
-        <div className='bg-red-100 w-3/4 pr-0'>
+        <div className='pl-[80px] pt-[80px]'>
           <div className='items-center'>
-            <h1 className='text-5xl font-bold text-black font-space-grotesk leading-tight'>Smart-Thinking &</h1> 
-            <h1 className='text-5xl font-bold text-black font-space-grotesk leading-tight'>Innovative Solutions</h1>
-            <p className='text-black font-space-intel'>Class aptent taciti sociosqu ad litora torquent conubia nostrama </p>
-            <p className='text-black font-space-intel'>inceptos himenaeos. Donec tristique nibh ipsum dignissim.</p>
+            <h1 className='text-5xl font-bold text-black font-space-grotesk leading-tight'>Providing new tech</h1> 
+            <h1 className='text-5xl font-bold text-black font-space-grotesk leading-tight'>Perspectives</h1>
+            <br />
+            <p className='text-black font-space-intel'>From Ideation to Execution, we are dedicated to </p>
+            <p className='text-black font-space-intel'>provide you and your business a value.</p>
           </div>
+          <br />
           <div className='flex items-center gap-4'>
             <button className='bg-[#3921F5] hover:bg-blue-900 transition-colors rounded-xl text-white px-6 py-2.5 font-space-grotesk'>Discover More</button>
             <p className='text-black hover:text-blue-800 cursor-pointer'>Contact Us</p>
           </div>
+          <br />
           <div className='flex items-center gap-4'>
             <p className='text-black font-space-grotesk'>Get 24/7 Support</p>
             <p className='text-black font-space-grotesk'>No Hidden Charges</p>
