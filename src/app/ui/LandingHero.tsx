@@ -3,12 +3,15 @@ import Image from 'next/image'
 
 const LandingHero = () => {
   return (
-    <div className='flex justify-between'>
+    <div className='flex justify-center'>
+    <div className='flex w-[1384px]'>
       <div className='flex flex-col gap-4 w-1/2'>
         <div className='pl-[80px] pt-[80px]'>
           <div className='items-center'>
-            <h1 className='text-5xl font-bold text-black font-space-grotesk leading-tight'>Providing new tech</h1> 
-            <h1 className='text-5xl font-bold text-black font-space-grotesk leading-tight'>Perspectives</h1>
+            <div className='flex-col w-[584px]'>
+            <h1 className='text-6xl font-bold text-black font-space-grotesk leading-tight'>Providing new tech</h1> 
+            <h1 className='text-6xl font-bold text-black font-space-grotesk leading-tight'>Perspectives</h1>
+            </div>
             <br />
             <p className='text-black font-space-intel'>From Ideation to Execution, we are dedicated to </p>
             <p className='text-black font-space-intel'>provide you and your business a value.</p>
@@ -72,6 +75,7 @@ const LandingHero = () => {
             </div>
           </div>
       </div>
+    </div>
     </div>
   )
 }
