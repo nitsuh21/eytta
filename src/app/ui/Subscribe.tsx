@@ -3,10 +3,40 @@
 import React from 'react'
 import { FaTelegram } from 'react-icons/fa'
 import { MdEmail } from 'react-icons/md'
+import { motion } from 'framer-motion'
 
 const Subscribe = () => {
+  const containerVariants = {
+    hidden: { opacity: 0 },
+    visible: {
+      opacity: 1,
+      transition: {
+        staggerChildren: 0.2
+      }
+    }
+  }
+
+  const itemVariants = {
+    hidden: { opacity: 0, y: 20 },
+    visible: {
+      opacity: 1,
+      y: 0,
+      transition: {
+        duration: 0.6,
+        ease: "easeOut"
+      }
+    }
+  }
+
   return (
-    <div id='contact' className="relative bg-slate-900 overflow-hidden">
+    <motion.div 
+      id='contact' 
+      className="relative bg-slate-900 overflow-hidden"
+      variants={containerVariants}
+      initial="hidden"
+      whileInView="visible"
+      viewport={{ once: true, margin: "-100px" }}
+    >
       {/* Background Elements */}
       <div className="absolute inset-0">
         <div className="absolute top-0 left-1/2 -translate-x-1/2 w-[1000px] h-[1000px] bg-gradient-to-b from-blue-500/30 via-violet-500/30 to-transparent opacity-20 blur-3xl"></div>
@@ -14,21 +44,33 @@ const Subscribe = () => {
         <div className="absolute top-1/4 right-0 w-[500px] h-[500px] bg-gradient-to-tl from-purple-500/20 via-violet-500/20 to-transparent opacity-30 blur-3xl"></div>
       </div>
 
-      <div className="relative max-w-7xl mx-auto px-4 py-24 sm:px-6 lg:px-8">
-        <div className="text-center mb-12">
+      <motion.div 
+        className="relative max-w-7xl mx-auto px-4 py-24 sm:px-6 lg:px-8"
+        variants={itemVariants}
+      >
+        <motion.div 
+          className="text-center mb-12"
+          variants={itemVariants}
+        >
           <h2 className="text-3xl md:text-4xl font-bold bg-clip-text text-transparent bg-gradient-to-r from-blue-400 to-violet-400 mb-4">
             Get in Touch
           </h2>
           <p className="text-slate-400 text-lg max-w-2xl mx-auto">
             Have a project in mind? We&apos;d love to hear from you. Choose your preferred way to connect with us.
           </p>
-        </div>
+        </motion.div>
 
-        <div className="grid grid-cols-1 md:grid-cols-2 gap-8 max-w-3xl mx-auto">
+        <motion.div 
+          className="grid grid-cols-1 md:grid-cols-2 gap-8 max-w-3xl mx-auto"
+          variants={itemVariants}
+        >
           {/* Email Card */}
-          <a 
+          <motion.a 
             href="mailto:contact@eytta.com" 
             className="group relative bg-slate-800/50 backdrop-blur-xl rounded-2xl p-8 border border-slate-700/50 hover:bg-slate-800/70 transition-all duration-300"
+            variants={itemVariants}
+            whileHover={{ scale: 1.02 }}
+            whileTap={{ scale: 0.98 }}
           >
             <div className="absolute inset-0 bg-gradient-to-br from-blue-500/10 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300 rounded-2xl"></div>
             <div className="relative flex flex-col items-center text-center">
@@ -40,20 +82,23 @@ const Subscribe = () => {
                 Email Us
               </h3>
               <p className="text-slate-400 mb-4 group-hover:text-slate-300 transition-colors duration-300">
-                Send us an email anytime. We&apos;ll get back to you within 24 hours.
+                Send us an email anytime. We&apos;ll get back to you within short time.
               </p>
               <span className="text-blue-400 font-medium group-hover:text-blue-300 transition-colors duration-300">
                 contact@eytta.com
               </span>
             </div>
-          </a>
+          </motion.a>
 
           {/* Telegram Card */}
-          <a 
+          <motion.a 
             href="https://t.me/eytta" 
             target="_blank" 
             rel="noopener noreferrer" 
             className="group relative bg-slate-800/50 backdrop-blur-xl rounded-2xl p-8 border border-slate-700/50 hover:bg-slate-800/70 transition-all duration-300"
+            variants={itemVariants}
+            whileHover={{ scale: 1.02 }}
+            whileTap={{ scale: 0.98 }}
           >
             <div className="absolute inset-0 bg-gradient-to-br from-violet-500/10 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300 rounded-2xl"></div>
             <div className="relative flex flex-col items-center text-center">
@@ -71,10 +116,10 @@ const Subscribe = () => {
                 @eytta_tech
               </span>
             </div>
-          </a>
-        </div>
-      </div>
-    </div>
+          </motion.a>
+        </motion.div>
+      </motion.div>
+    </motion.div>
   )
 }
 

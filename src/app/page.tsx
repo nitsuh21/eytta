@@ -4,7 +4,6 @@ import Tools from "./ui/Tools";
 import Services from "./ui/Services";
 import Why from "./ui/Why"
 import Subscribe from "./ui/Subscribe"
-import Contact from "./ui/Contact"
 import Footer from "./ui/Footer";
 
 export default function Home() {

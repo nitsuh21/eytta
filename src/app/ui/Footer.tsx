@@ -20,14 +20,14 @@ const Footer = () => {
                 Your trusted partner in digital transformation and software solutions.
               </p>
               <div className="flex space-x-4 justify-center md:justify-start">
-                <Link href="https://twitter.com" className="hover:text-blue-400 transition-colors">
-                  <Image src="/images/twitter.svg" alt="Twitter" width={24} height={24} priority />
-                </Link>
-                <Link href="https://linkedin.com" className="hover:text-blue-400 transition-colors">
+                <Link href="https://www.linkedin.com/company/eyta-technologies/" className="hover:text-blue-400 transition-colors">
                   <Image src="/images/linkedin.svg" alt="LinkedIn" width={24} height={24} priority />
                 </Link>
-                <Link href="https://facebook.com" className="hover:text-blue-400 transition-colors">
+                <Link href="https://facebook.com/eytta_tech" className="hover:text-blue-400 transition-colors">
                   <Image src="/images/facebook.svg" alt="Facebook" width={24} height={24} priority />
+                </Link>
+                <Link href={"https://t.me/eytta_tech"} className='hover:text-blue-400 transition-colors'>
+                  <Image src="/images/telegram.svg" alt="Telegram" width={24} height={24} priority />
                 </Link>
               </div>
             </div>

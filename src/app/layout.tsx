@@ -23,6 +23,14 @@ export const metadata: Metadata = {
   title: "Eytta Technologies | Digital Transformation Solutions",
   description: "Eytta Technologies - Your trusted partner in digital transformation and software solutions. We specialize in web development, mobile apps, and enterprise solutions.",
   keywords: "digital transformation, software development, web development, mobile apps, enterprise solutions",
+  icons: {
+    icon: [
+      {
+        url: '/favicon.svg',
+        type: 'image/svg+xml',
+      }
+    ],
+  },
   openGraph: {
     title: "Eytta Technologies | Digital Transformation Solutions",
     description: "Your trusted partner in digital transformation and software solutions",
@@ -63,6 +71,7 @@ export default function RootLayout({
     <html lang="en">
       <body
         className={`${spaceGrotesk.variable} ${geistSans.variable} ${geistMono.variable} antialiased bg-[#FAFAFA]`}
+        suppressHydrationWarning
       >
         {children}
       </body>
