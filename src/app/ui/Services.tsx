@@ -14,7 +14,7 @@ const Services = () => {
       description: "Build scalable, robust applications tailored to your business needs. From web apps to enterprise solutions, we deliver cutting-edge software that drives innovation.",
       features: [
         "Website Development",
-        "Cloud-native Solutions",
+        "ERP Solutions",
         "Fullstack Development",
         "Database Design"
       ],
@@ -135,31 +135,48 @@ const Services = () => {
                 <h3 className="text-xl font-bold text-white mb-3">{service.title}</h3>
                 <p className="text-slate-400 mb-6">{service.description}</p>
 
-                {/* Features List */}
-                <AnimatePresence>
-                  {hoveredService === index && (
-                    <motion.ul
-                      initial={{ opacity: 0, height: 0 }}
-                      animate={{ opacity: 1, height: 'auto' }}
-                      exit={{ opacity: 0, height: 0 }}
-                      transition={{ duration: 0.3 }}
-                      className="space-y-2"
-                    >
-                      {service.features.map((feature, featureIndex) => (
-                        <motion.li
-                          key={featureIndex}
-                          initial={{ opacity: 0, x: -20 }}
-                          animate={{ opacity: 1, x: 0 }}
-                          transition={{ duration: 0.3, delay: featureIndex * 0.1 }}
-                          className="flex items-center text-slate-300"
-                        >
-                          <div className={`w-2 h-2 rounded-full bg-gradient-to-r ${service.gradient} mr-3`} />
-                          {feature}
-                        </motion.li>
-                      ))}
-                    </motion.ul>
-                  )}
-                </AnimatePresence>
+                {/* Features List - Always visible on mobile, hover on desktop */}
+                <div className="block md:hidden">
+                  <ul className="space-y-2">
+                    {service.features.map((feature, featureIndex) => (
+                      <li
+                        key={featureIndex}
+                        className="flex items-center text-slate-300"
+                      >
+                        <div className={`w-2 h-2 rounded-full bg-gradient-to-r ${service.gradient} mr-3`} />
+                        {feature}
+                      </li>
+                    ))}
+                  </ul>
+                </div>
+
+                {/* Features List - Hover effect only on desktop */}
+                <div className="hidden md:block">
+                  <AnimatePresence>
+                    {hoveredService === index && (
+                      <motion.ul
+                        initial={{ opacity: 0, height: 0 }}
+                        animate={{ opacity: 1, height: 'auto' }}
+                        exit={{ opacity: 0, height: 0 }}
+                        transition={{ duration: 0.3 }}
+                        className="space-y-2"
+                      >
+                        {service.features.map((feature, featureIndex) => (
+                          <motion.li
+                            key={featureIndex}
+                            initial={{ opacity: 0, x: -20 }}
+                            animate={{ opacity: 1, x: 0 }}
+                            transition={{ duration: 0.3, delay: featureIndex * 0.1 }}
+                            className="flex items-center text-slate-300"
+                          >
+                            <div className={`w-2 h-2 rounded-full bg-gradient-to-r ${service.gradient} mr-3`} />
+                            {feature}
+                          </motion.li>
+                        ))}
+                      </motion.ul>
+                    )}
+                  </AnimatePresence>
+                </div>
               </div>
             </motion.div>
           ))}
