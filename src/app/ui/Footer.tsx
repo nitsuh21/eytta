@@ -12,7 +12,7 @@ const Footer = () => {
             {/* Company Info */}
             <div className="col-span-1">
               <div className="flex justify-center md:justify-start">
-                <Image src="/logo.svg" alt="Eytta Logo" width={120} height={40} className="mb-6" />
+                <p className='text text-xl font-bold pb-4'>Eytta Technologies</p>
               </div>
               <p className="text-gray-300 mb-4 text-center md:text-left">
                 Your trusted partner in digital transformation and software solutions.
