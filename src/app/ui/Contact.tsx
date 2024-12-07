@@ -4,7 +4,7 @@ import React from 'react'
 import { FaTelegram } from 'react-icons/fa'
 import { MdEmail } from 'react-icons/md'
 
-const Subscribe = () => {
+const Contact = () => {
   return (
     <div className="relative bg-slate-900 overflow-hidden">
       {/* Background Elements */}
@@ -78,4 +78,4 @@ const Subscribe = () => {
   )
 }
 
-export default Subscribe
+export default Contact
