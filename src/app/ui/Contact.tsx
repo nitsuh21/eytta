@@ -1,5 +1,3 @@
-'use client'
-
 import React from 'react'
 import { FaTelegram } from 'react-icons/fa'
 import { MdEmail } from 'react-icons/md'
@@ -20,7 +18,7 @@ const Contact = () => {
             Get in Touch
           </h2>
           <p className="text-slate-400 text-lg max-w-2xl mx-auto">
-            Have a project in mind? We'd love to hear from you. Choose your preferred way to connect with us.
+            Have a project in mind? We'd love to hear from yoHave a project in mind? We&apos;d love to hear from you. Choose your preferred way to connect with us.u. Choose your preferred way to connect with us.
           </p>
         </div>
 

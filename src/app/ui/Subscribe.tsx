@@ -20,7 +20,7 @@ const Subscribe = () => {
             Get in Touch
           </h2>
           <p className="text-slate-400 text-lg max-w-2xl mx-auto">
-            Have a project in mind? We'd love to hear from you. Choose your preferred way to connect with us.
+            Have a project in mind? We&apos;d love to hear from you. Choose your preferred way to connect with us.
           </p>
         </div>
 
@@ -40,7 +40,7 @@ const Subscribe = () => {
                 Email Us
               </h3>
               <p className="text-slate-400 mb-4 group-hover:text-slate-300 transition-colors duration-300">
-                Send us an email anytime. We'll get back to you within 24 hours.
+                Send us an email anytime. We&apos;ll get back to you within 24 hours.
               </p>
               <span className="text-blue-400 font-medium group-hover:text-blue-300 transition-colors duration-300">
                 contact@eytta.com
