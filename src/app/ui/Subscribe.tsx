@@ -6,7 +6,7 @@ import { MdEmail } from 'react-icons/md'
 
 const Subscribe = () => {
   return (
-    <div className="relative bg-slate-900 overflow-hidden">
+    <div id='contact' className="relative bg-slate-900 overflow-hidden">
       {/* Background Elements */}
       <div className="absolute inset-0">
         <div className="absolute top-0 left-1/2 -translate-x-1/2 w-[1000px] h-[1000px] bg-gradient-to-b from-blue-500/30 via-violet-500/30 to-transparent opacity-20 blur-3xl"></div>
@@ -68,7 +68,7 @@ const Subscribe = () => {
                 Join our Telegram channel for quick responses and updates.
               </p>
               <span className="text-violet-400 font-medium group-hover:text-violet-300 transition-colors duration-300">
-                @eytta
+                @eytta_tech
               </span>
             </div>
           </a>

@@ -1,10 +1,12 @@
+'use client'
+
 import React from 'react'
 import { FaTelegram } from 'react-icons/fa'
 import { MdEmail } from 'react-icons/md'
 
 const Contact = () => {
   return (
-    <div className="relative bg-slate-900 overflow-hidden">
+    <div id="contact" className="relative bg-slate-900 overflow-hidden">
       {/* Background Elements */}
       <div className="absolute inset-0">
         <div className="absolute top-0 left-1/2 -translate-x-1/2 w-[1000px] h-[1000px] bg-gradient-to-b from-blue-500/30 via-violet-500/30 to-transparent opacity-20 blur-3xl"></div>

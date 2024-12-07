@@ -1,3 +1,5 @@
+'use client'
+
 import React from 'react'
 import Image from 'next/image'
 import Link from 'next/link'
@@ -19,13 +21,13 @@ const Footer = () => {
               </p>
               <div className="flex space-x-4 justify-center md:justify-start">
                 <Link href="https://twitter.com" className="hover:text-blue-400 transition-colors">
-                  <Image src="/images/twitter.svg" alt="Twitter" width={24} height={24} />
+                  <Image src="/images/twitter.svg" alt="Twitter" width={24} height={24} priority />
                 </Link>
                 <Link href="https://linkedin.com" className="hover:text-blue-400 transition-colors">
-                  <Image src="/images/linkedin.svg" alt="LinkedIn" width={24} height={24} />
+                  <Image src="/images/linkedin.svg" alt="LinkedIn" width={24} height={24} priority />
                 </Link>
                 <Link href="https://facebook.com" className="hover:text-blue-400 transition-colors">
-                  <Image src="/images/facebook.svg" alt="Facebook" width={24} height={24} />
+                  <Image src="/images/facebook.svg" alt="Facebook" width={24} height={24} priority />
                 </Link>
               </div>
             </div>
@@ -59,6 +61,10 @@ const Footer = () => {
                 <p className="text-gray-300">
                   <span className="block font-semibold">Email:</span>
                   contact@eytta.com
+                </p>
+                <p className="text-gray-300">
+                  <span className="block font-semibold">Telegram:</span>
+                  @eytta_tech
                 </p>
               </div>
             </div>

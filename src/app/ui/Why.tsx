@@ -1,3 +1,5 @@
+'use client'
+
 import React from 'react'
 import Image from 'next/image'
 
@@ -29,7 +31,7 @@ const Why = () => {
               </div>
             </div>
             <h3 className='text-white font-bold font-space-grotesk text-xl text-center group-hover:text-blue-400 transition-colors duration-300'>
-              Creative Designs
+              Innovative Designs
             </h3>
             <p className='text-slate-400 text-center mt-4 group-hover:text-slate-300 transition-colors duration-300'>
               New Perspectives for better solutions
@@ -44,10 +46,10 @@ const Why = () => {
               </div>
             </div>
             <h3 className='text-white font-bold font-space-grotesk text-xl text-center group-hover:text-purple-400 transition-colors duration-300'>
-              Awesome Designs
+              Best Implementations
             </h3>
             <p className='text-slate-400 text-center mt-4 group-hover:text-slate-300 transition-colors duration-300'>
-              Professional Designing that meets your brand
+              Professional Delivery that exceeds expectations
             </p>
           </div>
 
@@ -59,10 +61,10 @@ const Why = () => {
               </div>
             </div>
             <h3 className='text-white font-bold font-space-grotesk text-xl text-center group-hover:text-indigo-400 transition-colors duration-300'>
-              Best Features
+               Project Management
             </h3>
             <p className='text-slate-400 text-center mt-4 group-hover:text-slate-300 transition-colors duration-300'>
-              Latest technological achievements
+              Effective and Efficient Project Management
             </p>
           </div>
 
@@ -74,10 +76,10 @@ const Why = () => {
               </div>
             </div>
             <h3 className='text-white font-bold font-space-grotesk text-xl text-center group-hover:text-violet-400 transition-colors duration-300'>
-              Easy Solutions
+              Clear Communications
             </h3>
             <p className='text-slate-400 text-center mt-4 group-hover:text-slate-300 transition-colors duration-300'>
-              Value over Complications
+              Value over Complications, No Hidden Costs
             </p>
           </div>
         </div>

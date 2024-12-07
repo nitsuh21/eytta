@@ -13,9 +13,9 @@ const Services = () => {
       title: "Custom Software Development",
       description: "Build scalable, robust applications tailored to your business needs. From web apps to enterprise solutions, we deliver cutting-edge software that drives innovation.",
       features: [
-        "Full-stack Development",
+        "Website Development",
         "Cloud-native Solutions",
-        "API Integration",
+        "Fullstack Development",
         "Database Design"
       ],
       gradient: "from-blue-500 via-indigo-500 to-purple-500"
@@ -61,8 +61,8 @@ const Services = () => {
       title: "AI & Machine Learning",
       description: "Harness the power of artificial intelligence to transform your business. We implement cutting-edge AI solutions for real-world challenges.",
       features: [
-        "Predictive Analytics",
-        "Natural Language Processing",
+        "Chat Bots development",
+        "Generative AI",
         "Computer Vision",
         "Machine Learning Models"
       ],
@@ -83,7 +83,7 @@ const Services = () => {
   ]
 
   return (
-    <div className="w-full bg-gradient-to-br from-slate-950 via-slate-900 to-indigo-950 py-20 relative overflow-hidden">
+    <section id="services" className="w-full bg-gradient-to-br from-slate-950 via-slate-900 to-indigo-950 py-20 relative overflow-hidden">
       {/* Background Decorative Elements */}
       <div className="absolute inset-0 overflow-hidden">
         <div className="absolute -top-1/2 -left-1/2 w-[1000px] h-[1000px] rounded-full bg-gradient-to-br from-blue-500/10 to-transparent blur-3xl"></div>
@@ -165,7 +165,7 @@ const Services = () => {
           ))}
         </div>
       </div>
-    </div>
+    </section>
   )
 }
 

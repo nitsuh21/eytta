@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            width: 1200px;
+            height: 630px;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            background: linear-gradient(135deg, #141F39 0%, #1a2844 100%);
+            font-family: system-ui, -apple-system, sans-serif;
+            color: white;
+        }
+        .container {
+            text-align: center;
+            padding: 40px;
+        }
+        .title {
+            font-size: 64px;
+            font-weight: bold;
+            margin-bottom: 20px;
+            background: linear-gradient(to right, #60A5FA, #7C3AED);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+        }
+        .subtitle {
+            font-size: 32px;
+            color: #94A3B8;
+            max-width: 800px;
+            line-height: 1.4;
+        }
+        .accent {
+            position: absolute;
+            width: 300px;
+            height: 300px;
+            border-radius: 50%;
+            background: linear-gradient(135deg, #3B82F6 0%, #7C3AED 100%);
+            filter: blur(100px);
+            opacity: 0.3;
+        }
+        .accent-1 {
+            top: -50px;
+            left: -50px;
+        }
+        .accent-2 {
+            bottom: -50px;
+            right: -50px;
+        }
+    </style>
+</head>
+<body>
+    <div class="accent accent-1"></div>
+    <div class="accent accent-2"></div>
+    <div class="container">
+        <h1 class="title">Eytta Technologies</h1>
+        <p class="subtitle">Digital Transformation Solutions</p>
+    </div>
+</body>
+</html>
