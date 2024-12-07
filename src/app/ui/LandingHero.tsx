@@ -1,7 +1,7 @@
 'use client'
 
 import React from 'react'
-import { FiUsers, FiTrendingUp, FiBarChart2, FiActivity } from 'react-icons/fi'
+import { FiUsers, FiTrendingUp, FiBarChart2 } from 'react-icons/fi'
 import { BiSupport } from 'react-icons/bi'
 import { MdVerified } from 'react-icons/md'
 import { FaLinkedin, FaYoutube, FaTiktok, FaTelegram } from 'react-icons/fa'
