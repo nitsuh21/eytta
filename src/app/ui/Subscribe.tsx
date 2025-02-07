@@ -92,7 +92,7 @@ const Subscribe = () => {
 
           {/* Telegram Card */}
           <motion.a 
-            href="https://t.me/eytta" 
+            href="https://t.me/eytta_tech" 
             target="_blank" 
             rel="noopener noreferrer" 
             className="group relative bg-slate-800/50 backdrop-blur-xl rounded-2xl p-8 border border-slate-700/50 hover:bg-slate-800/70 transition-all duration-300"
